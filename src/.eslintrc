@@ -14,7 +14,7 @@
     "react/no-array-index-key": [0],
     "react/no-danger": [0],
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
-    "import/no-named-as-default": 0
+    "react-hooks/exhaustive-deps": "warn"
+    // "import/no-named-as-default": 0
   }
 }
