@@ -1,6 +1,10 @@
 import React, { useEffect, useReducer } from 'react';
 import { useParams } from 'react-router-dom';
 import { apiGet } from '../misc/config';
+// import ShowMainData from '../components/show/ShowMainData';
+// import Details from '../components/show/Details';
+// import Cast from '../components/show/Cast';
+// import Seasons from '../components/show/Seasons';
 
 // reducer is a function that returns a new state
 // recieves 2 arguements current or prev state and action objects
@@ -9,7 +13,7 @@ const reducer = (prevState, action) => {
   switch (action.type) {
     // first action is when fetch is sucessful
     // whatever we return will be set as a new state
-    case 'FETCH_SUCESS': {
+    case 'FETCH_SUCCESS': {
       // Return object
       // We will pass action of type and action.show wil return to reducer and set error to null
       return { isLoading: false, error: null, show: action.show };
@@ -77,7 +81,6 @@ const Show = () => {
     return <div>Error occured: {error}</div>;
   }
 
-  return <div>This is show page</div>;
+  return <div>this is show page</div>;
 };
-
 export default Show;
