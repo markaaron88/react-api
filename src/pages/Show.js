@@ -6,6 +6,7 @@ import ShowMainData from '../components/show/ShowMainData';
 import Details from '../components/show/Details';
 import Cast from '../components/show/Cast';
 import Seasons from '../components/show/Seasons';
+import { ShowPageWrapper, InfoBlock } from './Show.styled';
 
 // reducer is a function that returns a new state
 // recieves 2 arguements current or prev state and action objects
@@ -83,7 +84,7 @@ const Show = () => {
   }
 
   return (
-    <div>
+    <ShowPageWrapper>
       <ShowMainData
         image={show.image}
         name={show.name}
@@ -92,14 +93,14 @@ const Show = () => {
         tags={show.genres}
       />
 
-      <div>
+      <InfoBlock>
         <h2> Details</h2>
         <Details
           staus={show.status}
           network={show.network}
           premiered={show.premiered}
         />
-      </div>
+      </InfoBlock>
       <div>
         <h2> Seasons</h2>
         <Seasons seasons={show._embedded.seasons} />
@@ -108,7 +109,7 @@ const Show = () => {
         <h2> Cast</h2>
         <Cast cast={show._embedded.cast} />
       </div>
-    </div>
+    </ShowPageWrapper>
   );
 };
 export default Show;
