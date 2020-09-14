@@ -1,6 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
 
-## Available Scripts
+## General info
+Created a Searchable Tv Show Application using an API.
+	
+## Technologies
+Project is created with:
+* React Web Framework
+* JavaScript
+* HTML
+* CSS
+
+## Setup
 
 In the project directory, you can run:
 
